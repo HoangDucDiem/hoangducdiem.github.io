@@ -6,14 +6,7 @@
 div,section {
     display: block;
 }
-.banner {
-    width: 100%;
-    height: 841px;
-    background-image: url(img/Bitmap.png);
-    background-repeat: no-repeat;	
-    background-size: contain;
-    background-attachment: fixed;
-}
+
 .text{
 	text-align: center;
 
@@ -23,13 +16,4 @@ div,section {
 }
 .section2{
 	margin-top: 86px;
-}
-.section3{
-	width: 100%;
-    height: 841px;
-    background-image: url(img/testimonials.png);
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    background-size: contain;
-    background-attachment: fixed;
 }
