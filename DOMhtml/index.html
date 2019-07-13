@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai Tap phan Document Object Model</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			box-sizing: border-box;
+			padding: 6px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="wrap">
+		<h1>Bai tap phan DOM HTML</h1>
+	</div>
+	<div id ="p"class="text">
+		<div id="p1">
+			<img src="https://media.foody.vn/images/12748346_815760225219758_1644805970_n(1).jpg" width="300px">
+			<p>Bún đậu mắm tôm là món ăn đơn giản, dân dã trong ẩm thực miền Bắc Việt Nam. Đây là món thường được dùng như bữa ăn nhẹ, ăn chơi. Thành phần chính gồm có bún tươi, đậu hũ rán vàng, chả cốm, nem chua, mắm tôm pha chanh, ớt và ăn kèm với các loại rau thơm như tía tô, kinh giới, rau húng, xà lách, cà pháo...Cũng như các món ăn dân gian khác, giá thành rẻ nên được nhiều người giới bình dân ăn nên thu nhập của những người buôn bán những món ăn này khá cao.</p><br/>
+		</div>
+		<div id="p2" class="no_img">
+			<p>Công thức:<br/>
+
+			Cho lượng dầu vừa phải vào chảo. Dầu nóng, cho đậu vào rán sơ. Miếng đậu hơi cứng, vớt ra (nếu thích ăn giòn, cho dầu ngập xâm xấp miếng đậu, trở đều, khi đậu phồng vàng, vớt ra). Cho đậu vào giấy thấm dầu, tắp bếp.<br/>
+
+			Chả cốm được kết hợp từ thịt heo xay nhuyễn và cốm và các nguyên vật liệu khác tạo nên một hương vị đặc trưng.<br/>
+
+			Nem chua chế biến theo công thức truyền thống được rán giòn lên.<br/>
+
+			Cho tỏi, ớt vào mắm tôm, vắt chanh cho mắm nổi bọt, đánh tan đều. Cho thêm vào một ít đường, nêm vừa miệng. Thực ra còn có thêm một thứ nước gia vị khác ngoài những công thức chung trên, đó là bí quyết của người làm bún đậu mắm tôm.<br/>
+
+			Xếp lá tía tô ra đĩa, xen kẽ với lá kinh giới, xếp đậu rán lên trên. Dùng nóng với bún và mắm tôm đã pha.<br/></p>
+		</div>
+		<div id="p3" class="no_img">
+			<p>Với món bún đậu mắm tôm, hầu như ai cũng nằm lòng một địa chỉ là quán ngon, quán ruột của mình. Ấy thế mà, đi qua bất cứ một con đường nào, chỉ cần thấy là bún đậu, thì có khi người ta cũng kìm lòng không đậu mà vẫn muốn thử tìm tòi một chút xem, liệu có quán nào ngon hơn?</p>
+		</div>
+	</div>
+
+<script>
+
+	//Doi mau chu
+	function changeColor(){
+		document.getElementById("p1").style.color = "blue";
+		document.getElementById("p2").style.color = "yellow";
+		document.getElementById("p3").style.color = "red";
+	}
+
+	//Doi mau background
+	function changeBgColor(color){
+		document.body.style.backgroundColor =color;
+	}
+
+	//Copy Content
+	function copyContent(p1, p2){
+	var x = document.getElementById(p1);
+	var y = document.getElementById(p2)
+	x.innerHTML = y.innerText;
+	}
+	
+	function increaseFontSize(paragraph){
+	let giaTri = window.getComputedStyle(paragraph);
+	var x = parseInt(giaTri.getPropertyValue('font-size').replace("px",""));
+	if(x + 1 < 30){
+		paragraph.style.fontSize = x + 1 + "px";
+	}
+	else{
+		alert("Oversize");
+	}
+}
+
+	function decreaseFontSize(paragraph){
+	let giaTri = window.getComputedStyle(paragraph);
+	var x = parseInt(giaTri.getPropertyValue('font-size').replace("px",""));
+	if(x - 1 > 10){
+		paragraph.style.fontSize = x - 1 + "px";
+	}
+	else{
+		alert("Oversize");
+	}
+	}
+</script>
+
+</body>
+</html>

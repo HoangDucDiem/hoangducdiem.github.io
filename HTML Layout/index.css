@@ -1,0 +1,47 @@
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	font-size:90%;
+
+}
+a{
+	text-decoration: none;
+	
+}
+li{
+	list-style: none;
+	float: left;
+	padding: 20px;
+}
+.image {
+	width: 100%;
+	margin: 0px;
+}
+article> h2, p{
+
+}
+h2{
+	color: purple;
+	text-align: center;
+}
+p{
+	color: black;
+	text-align: justify;
+}
+
+.aside{
+	padding-top: 20px;
+	width: 50%;
+	float: left;
+}
+footer{
+	padding: 20px;
+
+}
+footer > p{
+	color: red;
+}

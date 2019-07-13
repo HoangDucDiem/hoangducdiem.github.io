@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>My Books List</title>
+  <style type="text/css">
+  	*{
+  		box-sizing: border-box;
+  	}
+  	.grid{
+  		display: grid;
+  		grid-gap:15px;
+  		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  	}
+  	img{
+  		max-width: 100%;
+  	}
+
+
+  </style>
+</head>
+<body>
+  <h1>My Books List</h1>
+<div class="grid">
+
+  <div class="grid-item">
+
+  <div>Tên sách: The Design of EveryDay Things</div>
+  <div>Tên tác giả: Don Norman</div>
+</div>
+
+  <div>
+  	<img src="https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg">
+  </div>
+</div>
+
+  <script>
+  	let books =[{title: 'The Design of EveryDay Things',
+   author: 'Don Norman',
+   thumbnail: 'https://upload.wikimedia.org/wikipedia/en/3/33/The_Design_of_Everyday_Things_%28cover_1988%29.jpg',
+   alreadyRead: false
+  },
+
+  {title: 'The Most Human Human',
+  author: 'Brian Christian',
+  thumbnail: 'https://images-na.ssl-images-amazon.com/images/I/51aKPFuUy1L._SX324_BO1,204,203,200_.jpg',
+  alreadyRead: true
+  },
+
+  {title: "On Earth We're Briefly Gorgeous: A Novel",
+  author:'Ocean Vuong',
+  thumbnail:'https://images-na.ssl-images-amazon.com/images/I/41PasgSQ8VL._SX331_BO1,204,203,200_.jpg'
+  alreadyRead: true;
+
+  }
+  ]
+  </script>
+ </body>
+</html>

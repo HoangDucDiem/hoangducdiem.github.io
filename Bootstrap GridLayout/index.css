@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card-body{
+	background-color: #E8E8E8;
+}
+
+.thumb{
+	overflow: hidden;
+}
+.thumb img{
+	transition: all 1s linear;
+}
+.thumb:hover img{
+	transform: scale(1.2);
+	opacity: 0.8;
+}
+@media only screen and (max-width: 600px) {
+    h5 {
+        color: red;
+    }
+    .card-body {
+        background: gray;
+    }
+    footer .footer-bottom {
+        background-color: rgb(255, 208, 0);
+    }
+    footer .text-2 {
+        background-color: rgb(60, 255, 0);
+    }
+}

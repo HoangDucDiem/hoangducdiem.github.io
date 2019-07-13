@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+    <meta charset="utf-8"/>
+    <title>About Me</title>
+
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <ul>
+      <li>Nickname: <span id="nickname"></span>
+      <li>Favorites:  <span id="favorites"></span>
+      <li>Hometown: <span id="hometown"></span>
+     </ul>
+
+    <script type="text/javascript">
+
+        function changeFont() {
+            document.body.style.fontFamily = "Arial, sans-serif";
+        }
+        function changeAbout() {
+        document.getElementById("nickname").innerHTML = "Hoàng Đức Diễm";
+        document.getElementById("favorites").innerHTML = "Code dạo";
+        document.getElementById("hometown").innerHTML = "Hưng Yên";
+      }
+        function changeColor() {
+            let color = document.querySelectorAll("ul>li");
+            for (let i = 0; i < color.length; i++) {
+                color[i].className = "listitem";
+                let changeColor = document.getElementsByClassName("listitem");
+                changeColor[i].style.color = "red";
+            }
+        }
+
+    	
+    </script>
+   </body>
+  </html>

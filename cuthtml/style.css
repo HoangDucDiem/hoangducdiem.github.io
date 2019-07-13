@@ -1,0 +1,25 @@
+@font-face{
+	font-family: 'playfair_display';
+	src: url('../font/playfairdisplay-regular-webfont.eot');
+	src: url('../font/playfairdisplay-regular-webfont.eot?#iefix')
+	 url('../font/playfairdisplay-regular-webfont.eot')
+	 font-weight: normal;
+	 font-style: normal;
+}
+@font-face{
+	font-family: 'inconsolata';
+	src: url('../font/playfairdisplay-regular-webfont.eot');
+	src: url('../font/playfairdisplay-regular-webfont.eot?#iefix')
+	 url('../font/playfairdisplay-regular-webfont.eot')
+	 font-weight: normal;
+	 font-style: normal;
+}
+body{
+	font-family: 'playfair_display';
+	font-size: 14px;
+	color: #626262;
+}
+.navbar-brand{
+	font-family: 'inconsolata';
+	text-transform: uppercase;
+}

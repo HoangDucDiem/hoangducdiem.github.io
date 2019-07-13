@@ -1,0 +1,24 @@
+#menu {
+    list-style-type: none;
+    float: left;
+}
+#menu > li {
+    float: left;
+}
+li{
+display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+}
+a{
+	line-height: 40px;
+	text-decoration: none;
+	background-color: transparent;
+}
+#menu > li > ul {
+    list-style-type: none;
+    display: none;
+}
+#menu > li:hover > ul {
+    display: block;
+}

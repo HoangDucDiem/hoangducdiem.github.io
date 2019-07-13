@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Máy tính bỏ túi</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<table>
+		<tr>
+			<td colspan="5"><input id="result" type="text" name="hienthi" ></td>
+		</tr>
+		<tr>
+			<td><input class="nut" type="button" name="7" value="7" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="8" value="8" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="9" value="9" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="thuong" value="/" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="<--" value="<--" onclick="xoaKiTuCuoi()"/></td>
+		</tr>
+		<tr>
+			<td><input class="nut" type="button" name="7" value="4" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="8" value="5" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="9" value="6" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="tich" value="X" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="<--" value="CE" onclick="result.value=''"/></td>
+		</tr>
+		<tr>
+			<td><input class="nut" type="button" name="1" value="1" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="2" value="2" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="3" value="3" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="Tong" value="+" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="daucham" value="." onclick="hienThiLenManHinh(button)"/></td>
+			
+		</tr>
+		<tr>
+			<td><input id="binhphuong" class="nut" type="button" name="binhphuong" value="²" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="giaithua" value="!" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="phantram" value="%" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="hieu" value="-" onclick="hienThiLenManHinh(button)"/></td>
+			<td><input class="nut" type="button" name="canbachai" value="√" onclick="hienThiLenManHinh(button)"/></td>
+		</tr>
+		<tr>
+			<td colspan="5"><input id="daubang" class="nut" type="button" name="ketqua" value="=" onclick="tinhKetQua()"/></td>
+			
+		</tr>
+	</table>
+	<script>
+		let result = document.getElementById('result');
+
+		function hienThiLenManHinh(button){
+		document.getElementById('result').value+= button.value;
+		}
+
+		function tinhKetQua(){
+	
+			result.value=eval(result.value);
+		}
+		function xoaKiTuCuoi(){
+	
+		result.value=result.value.substr(0,result.value.length-1);
+	}
+	</script>
+</body>
+</html>

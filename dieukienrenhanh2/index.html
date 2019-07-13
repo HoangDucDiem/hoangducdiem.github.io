@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style>
+		 #date{
+		 	width: 800px;
+		 	margin: 50px auto;
+		 	text-align: center;
+		 	background: teal;
+		 	color: white;
+		 	padding: 20px;
+		 	font-family: arial;
+		 	font-size: 2em;
+		 }
+	</style>
+</head>
+<body>
+	<div id="date"></div>
+
+	<script>
+//Bai1
+		var now = new Date();
+		var date = now.getDate(); 
+		var month = now.getMonth() + 1;
+		var year = now.getFullYear();
+		document.getElementById("date").innerHTML = 
+		"Hôm nay, "+ "Thứ "+[now.getDay()+1]+
+		" ngày "+ [now.getDate()]+
+		" tháng " +[now.getMonth() + 1]+
+		" năm " +[now.getFullYear()];
+		if (month>9) {
+			document.write("Hiện tại là mùa đông");
+		}
+		else if (month>6) {
+			document.write("Hiện tại là mùa thu");
+		}
+		else if (month>3) {
+			document.write("Hiện tại là mùa hè");
+		}
+		else {
+			document.write("Hiện tại là mùa xuân");
+		}
+
+
+
+
+//Bai2
+
+		function diemso(x){
+			let point = "Điểm F";
+			if (x>8.4) {
+				point = "Điểm A";
+		}
+
+		else if (x>6.9) {
+			point = "Điểm A";
+			
+		}
+		 else if (x>5.4) {
+			point = "Điểm A";
+			
+		}
+		else if (x>3.9) {
+			point = "Điểm A";
+			
+		}
+		else if (x>0) {
+			point = "Điểm A";
+			
+		}
+		return point;
+		
+		}
+//Hien thi 100 so, so chia het cho 3 mau cam, chia het cho 5 mau xanh, chia het cho 3 và 5 mau do, con lai mau cam.
+	function mang(){
+		for(var i = 1; i<=100; i++){
+
+			if (i %15==0){
+				document.write('<p style="color: red">' + i + '</p>');
+			}
+
+			else if (i %3==0){
+				document.write('<p style="color: green">' + i + '</p>');
+			}
+			else if (i %5==0){
+				document.write('<p style="color: blue">' + i + '</p>');
+			}
+
+			else{
+				document.write('<p style="color: orange">' + i + '</p>');
+			}
+		}
+	}
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kiểm tra JS</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+<script type="text/javascript">
+	//Bài 1: Chuyển đổi nhiệt độ từ C sang F
+		function chuyenDoi(x){
+			document.write("Nhiệt độ theo độ C là: " + x+"<br/>");
+			document.write("Chuyển đổi sang độ F là: " + ((x*1.8)+32));
+
+		//Test Bài 1:
+		//Nhiệt độ theo độ C là: 17
+		//Chuyển đổi sang độ F là: 62.6
+		}
+
+
+	//Bài 2: Cho 1 mảng, tìm số lớn thứ 2 trong mảng.
+		function timSoLonThu2(){
+			var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+			var maxInArray = Math.max.apply(Math, array);
+			for( var i = 0; i < array.length; i++){ 
+   			if ( array[i] === array[maxInArray]) {
+     			arr.splice(i, array[maxInArray]); 
+   			}
+}
+			var arr_new =array;
+
+			return ("Phần tử lớn thứ hai của mảng là: " + Math.max.apply(Math, arr_new));
+ 
+		}
+
+		//Bài 5: Kiểm tra mảng xem có 2 phần tử giống nhau không.
+		function kiemTra(){
+			var arr = [1,3,4,5,2,7,8,9,10];
+			for(let i=0; i<arr.length; i++){
+				if(arr[i]==arr[i+1]){
+					return document.write("True"); //Mảng không có phần tử lặp lại.
+				}
+				else{
+					return document.write("False");  //Mảng có phần tử lặp lại.
+				}
+
+			}
+		}
+
+</script>
+</body>
+</html>
