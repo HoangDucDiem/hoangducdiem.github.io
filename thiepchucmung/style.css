@@ -1,0 +1,16 @@
+body{
+	background: url(img/bg.jpg);
+	background-size: cover;
+	color: red;
+	text-align: center;
+	font-size: 23px;
+	padding-top: 80px;
+	font-family: 'Pacifico', cursive;
+}
+h1{
+	font-size: 80px;
+
+}
+p{
+	margin-top: -50px;
+}
